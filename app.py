@@ -16,10 +16,10 @@ def index():
             if(a[0]=="00001"):
                 return a[4]
         f.close()
-                except Exception:
+    except Exception:
         return "Could not read to file"
-   
-    return "นายณัฐพัชร์ เลิศศิริธรรม เลขที่ 12 ชั้น ม.4/15"
+    
+    return "นายณัฐพัชร์ เลิศศิริธรรม เลขที่12 ชั้นม4/15"
 
 @app.route("/webhook", methods=['POST'])
 def webhook():
@@ -67,3 +67,4 @@ def sendText(user, text):
 
 if __name__ == '__main__':
     app.run()
+    
